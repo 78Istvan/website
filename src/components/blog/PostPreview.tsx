@@ -48,6 +48,10 @@ const StyledPostPreview = styled.div`
         font-weight: 400;
         flex-wrap: wrap;
     }
+
+    .author-name {
+        font-weight: 600;
+    }
 `
 
 interface BlogData {
@@ -102,7 +106,7 @@ const PostPreview: React.SFC<PostPreviewProps> = (props) => {
                     <span>
                         by {
                             authors.map((author, idx) => <React.Fragment>
-                                <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a>{idx < authors.length - 1 ? ', ' : ''}
+                                <span className="author-name">{author.name}</span>{idx < authors.length - 1 ? ', ' : ''}
                             </React.Fragment>)
                         }
                     </span>
