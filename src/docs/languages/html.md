@@ -1,4 +1,4 @@
-# HTML & CSS in Gitpod
+# HTML & CSS in Gitpod.
 
  Gitpod has great HTML and CSS support. In fact, Gitpod was made with web development in mind. And, depending on your needs, you may want to customize this experience further!
 
